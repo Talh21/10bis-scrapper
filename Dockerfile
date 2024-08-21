@@ -15,7 +15,7 @@
 # For AWS Lambda
 FROM public.ecr.aws/lambda/python:3.8
 COPY requirements.txt ${LAMBDA_TASK_ROOT}
-COPY TenBis_app.py ${LAMBDA_TASK_ROOT}
+COPY tenBis_app.py ${LAMBDA_TASK_ROOT}
 COPY main.py ${LAMBDA_TASK_ROOT}
 copy settings.py ${LAMBDA_TASK_ROOT}
 RUN pip install -r requirements.txt

@@ -1,4 +1,4 @@
-from TenBis_app import *
+from tenBis_app import *
 
 def main():
     app = App(MAIL_SENDER, TO_MAIL)
@@ -8,5 +8,5 @@ def main():
 def lambda_handler(event, context):
     main()
 
-# if __name__ == '__main__':
-#     main()
+if __name__ == '__main__':
+    main()
